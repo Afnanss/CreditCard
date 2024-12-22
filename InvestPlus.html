@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Combined Web Page Example">
-    <meta name="keywords" content="web, HTML, combined">
-    <title>Inves Plus Website</title>
+    <meta name="description" content="Inves Plus Website - Offers and Promotions">
+    <meta name="keywords" content="credit cards, promotions, offers">
+    <title>Inves Plus - Credit Card Offers</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,8 +16,8 @@
 
         header {
             background-color: #333;
-            color: #fff;
-            padding: 10px;
+            color: white;
+            padding: 20px;
             text-align: center;
         }
 
@@ -25,8 +25,8 @@
             width: 80%;
             margin: 20px auto;
             display: flex;
-            justify-content: space-between;
             flex-wrap: wrap;
+            justify-content: space-between;
         }
 
         .card {
@@ -37,11 +37,14 @@
             width: calc(33% - 40px);
             text-align: center;
             border-radius: 8px;
+            box-sizing: border-box;
         }
 
         .card img {
-            max-width: 100%;
+            width: 100%;
             border-radius: 8px;
+            max-height: 200px;
+            object-fit: cover;
         }
 
         .card-title {
@@ -49,75 +52,92 @@
             margin-top: 10px;
         }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-
         .highlight {
             background-image: url('backblue.gif');
             background-repeat: no-repeat;
             background-position: top right;
             padding: 20px;
-        }
-
-        .highlight h2 {
             color: white;
         }
 
-        .tableWidth {
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        table {
             width: 100%;
             margin: 20px 0;
+            border-collapse: collapse;
         }
 
-        .tableWidth td {
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
             padding: 10px;
+            text-align: left;
         }
 
-        .hide { display: none; }
+        .hide {
+            display: none;
+        }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Welcome to Inves Plus</h1>
-    <p>Explore the best offers and services</p>
+    <p>Your destination for the best offers and promotions</p>
 </header>
 
 <div class="highlight">
     <h2>AlAhli Cashback Credit Card</h2>
-    <p>Apply today and enjoy a monthly cashback without annual fees! Explore more benefits.</p>
-    <a href="alahli-cashback-credit-card.html">Learn More</a>
+    <p>Apply today and enjoy monthly cashback with no annual fees. Get exciting rewards and benefits!</p>
+    <a href="alahli-cashback-credit-card.html" style="color: #fff; text-decoration: underline;">Learn More</a>
 </div>
 
 <div class="container">
-    <!-- Card 1 -->
+    <!-- Credit Card Promotions -->
     <div class="card">
-        <img src="backblue.gif" alt="Offer Image 1">
-        <div class="card-title">Dining Offers</div>
-        <p>Enjoy dining offers with your AlAhli card at top restaurants.</p>
-        <a href="dining.html">Learn More</a>
+        <img src="backblue.gif" alt="AlAhli Cashback Credit Card">
+        <div class="card-title">AlAhli Cashback Credit Card</div>
+        <p>Enjoy monthly cashback with no annual fees. Apply now!</p>
+        <a href="alahli-cashback-credit-card.html">Learn More</a>
     </div>
-    <!-- Card 2 -->
+
+    <!-- Credit Card Promotions -->
     <div class="card">
-        <img src="fade.gif" alt="Offer Image 2">
+        <img src="fade.gif" alt="Credit Card Promotions">
         <div class="card-title">Credit Card Promotions</div>
-        <p>Discover the best discount offers when you use SNB cards.</p>
+        <p>Get the best discounts with SNB credit cards, shop and save big.</p>
         <a href="credit-card-promotions.html">See Promotions</a>
     </div>
-    <!-- Card 3 -->
+
+    <!-- More Offers -->
     <div class="card">
-        <img src="backblue.gif" alt="Offer Image 3">
-        <div class="card-title">Shopping Deals</div>
-        <p>Get exciting shopping offers with your SNB credit cards!</p>
-        <a href="shopping.html">Shop Now</a>
+        <img src="backblue.gif" alt="Other Offers">
+        <div class="card-title">Other Offers</div>
+        <p>Explore more exciting offers for you. More discounts are coming soon!</p>
+        <a href="#">Stay Tuned</a>
     </div>
 </div>
 
-<div class="tableWidth">
-    <table>
+<!-- Table for Other Links -->
+<table>
+    <thead>
+        <tr>
+            <th>Offer</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
         <tr>
             <td><strong>AlAhli Cashback Credit Card</strong></td>
             <td><a href="alahli-cashback-credit-card.html">Visit Page</a></td>
@@ -131,11 +151,11 @@
             <td><a href="leisure-and-entertainment.html">Explore</a></td>
         </tr>
         <tr>
-            <td><strong>Services</strong></td>
-            <td><a href="services.html">Learn More</a></td>
+            <td><strong>Dining Offers</strong></td>
+            <td><a href="dining.html">See Offers</a></td>
         </tr>
-    </table>
-</div>
+    </tbody>
+</table>
 
 <footer>
     <p>&copy; 2024 Inves Plus | All rights reserved</p>
