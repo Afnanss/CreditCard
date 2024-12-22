@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Combined Web Page Example">
+    <meta name="keywords" content="web, HTML, combined">
+    <title>Inves Plus Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: calc(33% - 40px);
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .card-title {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .highlight {
+            background-image: url('backblue.gif');
+            background-repeat: no-repeat;
+            background-position: top right;
+            padding: 20px;
+        }
+
+        .highlight h2 {
+            color: white;
+        }
+
+        .tableWidth {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .tableWidth td {
+            padding: 10px;
+        }
+
+        .hide { display: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Inves Plus</h1>
+    <p>Explore the best offers and services</p>
+</header>
+
+<div class="highlight">
+    <h2>AlAhli Cashback Credit Card</h2>
+    <p>Apply today and enjoy a monthly cashback without annual fees! Explore more benefits.</p>
+    <a href="alahli-cashback-credit-card.html">Learn More</a>
+</div>
+
+<div class="container">
+    <!-- Card 1 -->
+    <div class="card">
+        <img src="backblue.gif" alt="Offer Image 1">
+        <div class="card-title">Dining Offers</div>
+        <p>Enjoy dining offers with your AlAhli card at top restaurants.</p>
+        <a href="dining.html">Learn More</a>
+    </div>
+    <!-- Card 2 -->
+    <div class="card">
+        <img src="fade.gif" alt="Offer Image 2">
+        <div class="card-title">Credit Card Promotions</div>
+        <p>Discover the best discount offers when you use SNB cards.</p>
+        <a href="credit-card-promotions.html">See Promotions</a>
+    </div>
+    <!-- Card 3 -->
+    <div class="card">
+        <img src="backblue.gif" alt="Offer Image 3">
+        <div class="card-title">Shopping Deals</div>
+        <p>Get exciting shopping offers with your SNB credit cards!</p>
+        <a href="shopping.html">Shop Now</a>
+    </div>
+</div>
+
+<div class="tableWidth">
+    <table>
+        <tr>
+            <td><strong>AlAhli Cashback Credit Card</strong></td>
+            <td><a href="alahli-cashback-credit-card.html">Visit Page</a></td>
+        </tr>
+        <tr>
+            <td><strong>Credit Card Promotions</strong></td>
+            <td><a href="credit-card-promotions.html">View Details</a></td>
+        </tr>
+        <tr>
+            <td><strong>Leisure & Entertainment</strong></td>
+            <td><a href="leisure-and-entertainment.html">Explore</a></td>
+        </tr>
+        <tr>
+            <td><strong>Services</strong></td>
+            <td><a href="services.html">Learn More</a></td>
+        </tr>
+    </table>
+</div>
+
+<footer>
+    <p>&copy; 2024 Inves Plus | All rights reserved</p>
+</footer>
+
+</body>
+</html>
